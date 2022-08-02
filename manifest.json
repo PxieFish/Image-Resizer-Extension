@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "ImageResizer",
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["resize_image.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Resize",
+        "default_icon": "resize_logo.png"
+    }
+}
